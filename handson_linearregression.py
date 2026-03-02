@@ -139,7 +139,7 @@ my_model.fit(x_train,y_train)
 
 
 #Test the model with testing data 
-model_answers = my_model.predict(x_test)
+model_answers = my_model.predict(x_test) 
 # print(model_answers) # predicted answers
 # print(y_test) # actual answers 
 
