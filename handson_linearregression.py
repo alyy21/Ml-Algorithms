@@ -167,6 +167,7 @@ plt.title("Regression plot")
 
 
 # bcz our charges values are very high thats why this above graph is showing in that why use this instead
+# use this code insted 
 plt.figure(figsize=(8,6))
 plt.scatter(y_test, model_answers)
 
