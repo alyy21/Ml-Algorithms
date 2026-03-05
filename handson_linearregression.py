@@ -98,6 +98,7 @@ x = insurance.isnull().sum().sum()
 # insurance = insurance[(insurance.NUmber_of_past_hospitalizations >= lowerFence) & (insurance.NUmber_of_past_hospitalizations<=upperFence)]
 
 # this method is time consuming lets automate this with loops
+# use only numerical columns 
 cols=['bmi','past_consultations','Hospital_expenditure','Anual_Salary','NUmber_of_past_hospitalizations']
 for i in cols:
     Q1 = insurance[i].quantile(0.25)
