@@ -125,6 +125,7 @@ from sklearn.model_selection import train_test_split
 # print(col)
 x = insurance.loc[:,['age',  'bmi', 'children', 'Claim_Amount', 'past_consultations', 'num_of_steps', 'Hospital_expenditure', 'NUmber_of_past_hospitalizations', 'Anual_Salary']] #Independent
 
+# if we have object column we use this line pd.get_dummies to encode in binary or numbers 0-1
 # x = pd.get_dummies(x, drop_first=True)
 y = insurance.loc[:,'charges'] #Target column
 # print(x)
